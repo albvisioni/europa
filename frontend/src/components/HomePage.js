@@ -242,85 +242,15 @@ const HomePage = ({ onLogin, onRegister }) => {
                   value={registerForm.country}
                   onChange={(e) => setRegisterForm({ ...registerForm, country: e.target.value })}
                 >
-                  {/* Ballkani dhe Europa Juglindore */}
-                  <optgroup label="Ballkani dhe Europa Juglindore">
-                    <option value="albania">🇦🇱 Shqipëria</option>
-                    <option value="kosovo">🇽🇰 Kosova</option>
-                    <option value="north_macedonia">🇲🇰 Maqedonia e Veriut</option>
-                    <option value="serbia">🇷🇸 Serbia</option>
-                    <option value="greece">🇬🇷 Greqia</option>
-                    <option value="montenegro">🇲🇪 Mali i Zi</option>
-                    <option value="bosnia">🇧🇦 Bosnja dhe Hercegovina</option>
-                    <option value="slovenia">🇸🇮 Sllovenia</option>
-                    <option value="croatia">🇭🇷 Kroacia</option>
-                    <option value="romania">🇷🇴 Rumania</option>
-                    <option value="bulgaria">🇧🇬 Bulgaria</option>
-                  </optgroup>
-                  
-                  {/* Europa Lindore */}
-                  <optgroup label="Europa Lindore">
-                    <option value="turkey">🇹🇷 Turqia</option>
-                    <option value="moldova">🇲🇩 Moldavia</option>
-                    <option value="ukraine">🇺🇦 Ukraina</option>
-                    <option value="belarus">🇧🇾 Bjellorusia</option>
-                    <option value="latvia">🇱🇻 Letonia</option>
-                    <option value="estonia">🇪🇪 Estonia</option>
-                    <option value="lithuania">🇱🇹 Lituania</option>
-                    <option value="russia">🇷🇺 Rusia</option>
-                  </optgroup>
-                  
-                  {/* Europa Qendrore */}
-                  <optgroup label="Europa Qendrore">
-                    <option value="hungary">🇭🇺 Hungaria</option>
-                    <option value="poland">🇵🇱 Polonia</option>
-                    <option value="slovakia">🇸🇰 Sllovakia</option>
-                    <option value="czech">🇨🇿 Republika Çeke</option>
-                  </optgroup>
-                  
-                  {/* Europa Perëndimore */}
-                  <optgroup label="Europa Perëndimore">
-                    <option value="germany">🇩🇪 Gjermania</option>
-                    <option value="france">🇫🇷 Franca</option>
-                    <option value="switzerland">🇨🇭 Zvicra</option>
-                    <option value="austria">🇦🇹 Austria</option>
-                    <option value="italy">🇮🇹 Italia</option>
-                    <option value="uk">🇬🇧 Anglia</option>
-                    <option value="ireland">🇮🇪 Irlanda</option>
-                    <option value="netherlands">🇳🇱 Holanda</option>
-                    <option value="belgium">🇧🇪 Belgjika</option>
-                    <option value="spain">🇪🇸 Spanja</option>
-                    <option value="portugal">🇵🇹 Portugalia</option>
-                  </optgroup>
-                  
-                  {/* Ishujt */}
-                  <optgroup label="Ishujt">
-                    <option value="cyprus">🇨🇾 Qipro</option>
-                    <option value="malta">🇲🇹 Malta</option>
-                  </optgroup>
-                  
-                  {/* Azia */}
-                  <optgroup label="Azia">
-                    <option value="china">🇨🇳 Kina</option>
-                    <option value="japan">🇯🇵 Japonia</option>
-                    <option value="saudi_arabia">🇸🇦 Arabia Saudite</option>
-                    <option value="israel">🇮🇱 Izraeli</option>
-                    <option value="palestine">🇵🇸 Palestina</option>
-                    <option value="syria">🇸🇾 Siria</option>
-                    <option value="iran">🇮🇷 Irani</option>
-                    <option value="iraq">🇮🇶 Iraku</option>
-                  </optgroup>
-                  
-                  {/* Afrika */}
-                  <optgroup label="Afrika">
-                    <option value="egypt">🇪🇬 Egjipti</option>
-                  </optgroup>
-                  
-                  {/* Amerika */}
-                  <optgroup label="Amerika">
-                    <option value="usa">🇺🇸 SHBA</option>
-                    <option value="canada">🇨🇦 Kanadaja</option>
-                    <option value="mexico">🇲🇽 Meksika</option>
-                  </optgroup>
+                  {Object.entries(countriesByRegion).map(([region, countries]) => (
+                    <optgroup key={region} label={region}>
+                      {countries.map((country) => (
+                        <option key={country.code} value={country.code.toLowerCase()}>
+                          {country.flag} {country.name}
+                        </option>
+                      ))}
+                    </optgroup>
+                  ))}
                 </select>
                 <div className="flex space-x-2">
                   <Button type="submit" className="flex-1">Register</Button>
