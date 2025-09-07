@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from typing import List
-from ..database import DatabaseOperations
-from ..auth import get_current_user, get_current_admin_user
-from ..models import Country
+from database import DatabaseOperations
+from auth import get_current_user, get_current_admin_user
+from models import Country
 
 router = APIRouter(prefix="/countries", tags=["countries"])
 
