@@ -12,7 +12,7 @@ const HomePage = ({ onLogin, onRegister }) => {
     username: '', 
     email: '', 
     password: '', 
-    country: 'albania' 
+    country: 'al' 
   });
   const [isRegistering, setIsRegistering] = useState(false);
 
