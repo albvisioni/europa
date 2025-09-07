@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status, Depends, Query
 from typing import List, Optional
-from ..database import DatabaseOperations
-from ..auth import get_current_user
-from ..models import CompanyCreate, Company
+from database import DatabaseOperations
+from auth import get_current_user
+from models import CompanyCreate, Company
 from bson import ObjectId
 import random
 
