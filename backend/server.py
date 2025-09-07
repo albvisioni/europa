@@ -6,14 +6,14 @@ import logging
 from pathlib import Path
 
 # Import database connection
-from .database import connect_to_mongo, close_mongo_connection
+from database import connect_to_mongo, close_mongo_connection
 
 # Import route modules
-from .routes.auth import router as auth_router
-from .routes.users import router as users_router
-from .routes.countries import router as countries_router
-from .routes.battles import router as battles_router
-from .routes.companies import router as companies_router
+from routes.auth import router as auth_router
+from routes.users import router as users_router
+from routes.countries import router as countries_router
+from routes.battles import router as battles_router
+from routes.companies import router as companies_router
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
