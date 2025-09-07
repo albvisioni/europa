@@ -1,8 +1,8 @@
 from fastapi import APIRouter, HTTPException, status, Depends, Query
 from typing import List, Optional
-from ..models import UserUpdate
-from ..database import DatabaseOperations
-from ..auth import get_current_user
+from models import UserUpdate
+from database import DatabaseOperations
+from auth import get_current_user
 from bson import ObjectId
 
 router = APIRouter(prefix="/users", tags=["users"])
