@@ -39,7 +39,7 @@ def verify_token(token: str) -> Optional[dict]:
 
 async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(security)):
     """Dependency to get current authenticated user"""
-    from .database import DatabaseOperations
+    from database import DatabaseOperations
     
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
