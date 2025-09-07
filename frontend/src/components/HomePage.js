@@ -56,9 +56,10 @@ const HomePage = ({ onLogin, onRegister }) => {
   ];
 
   const testimonials = [
-    { text: "Europa brings European politics to life in an engaging way", author: "Le Monde" },
-    { text: "A masterpiece of strategic gameplay", author: "The Guardian" },
-    { text: "Europa offers the most realistic political simulation", author: "Der Spiegel" }
+    { text: "Europa sjell politikën ballkanike në jetë në një mënyrë tërheqëse", author: "Koha Ditore" },
+    { text: "Një kryevepër e lojës strategjike për rajonin", author: "Gazeta Express" },
+    { text: "Europa ofron simulimin më realist politik të Ballkanit", author: "BIRN" },
+    { text: "Një platformë e shkëlqyer për të kuptuar dinamikat rajonale", author: "Exit News" }
   ];
 
   const handleLogin = (e) => {
