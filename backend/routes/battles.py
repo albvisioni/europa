@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException, status, Depends
 from typing import List
 from datetime import datetime
-from ..database import DatabaseOperations
-from ..auth import get_current_user, get_current_admin_user
-from ..models import Battle, BattleFight
+from database import DatabaseOperations
+from auth import get_current_user, get_current_admin_user
+from models import Battle, BattleFight
 from bson import ObjectId
 import random
 
