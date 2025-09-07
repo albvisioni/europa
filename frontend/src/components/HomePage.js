@@ -4,6 +4,7 @@ import { Input } from './ui/input';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Users, Trophy, Star, MapPin, Building, Sword, Crown } from 'lucide-react';
+import { countriesByRegion } from '../mock/worldCountries';
 
 const HomePage = ({ onLogin, onRegister }) => {
   const [loginForm, setLoginForm] = useState({ email: '', password: '' });
