@@ -175,35 +175,67 @@ export const mockPoliticalParties = [
 export const mockNews = [
   {
     id: 1,
-    title: 'France declares war on Spain over territory dispute',
-    content: 'Tensions escalate as French forces mobilize along the Spanish border...',
+    title: 'Serbia shpall luftë ndaj Kroacisë për territore të diskutueshme',
+    content: 'Tensionet eskalojnë ndërsa forcat serbe mobilizohen përgjatë kufirit kroat...',
     type: 'military',
     timestamp: new Date(Date.now() - 2 * 60 * 60 * 1000), // 2 hours ago
     author: 'EuropaNews'
   },
   {
     id: 2,
-    title: 'New economic policies announced in Germany',
-    content: 'The German government introduces new tax reforms to boost economic growth...',
+    title: 'Politika të reja ekonomike shpallen në Shqipëri',
+    content: 'Qeveria shqiptare prezanton reforma të reja tatimore për të nxitur rritjen ekonomike...',
     type: 'politics',
     timestamp: new Date(Date.now() - 4 * 60 * 60 * 1000), // 4 hours ago
     author: 'PoliticalReporter'
   },
   {
     id: 3,
-    title: 'Italy elects new president in close election',
-    content: 'After a heated campaign, Italy chooses its new leader by a narrow margin...',
+    title: 'Kosova zgjedh president të ri në zgjedhje të ngushta',
+    content: 'Pas një fushate të nxehtë, Kosova zgjedh liderin e ri me një diferencë të ngushtë...',
     type: 'politics',
     timestamp: new Date(Date.now() - 6 * 60 * 60 * 1000), // 6 hours ago
     author: 'ElectionWatch'
   },
   {
     id: 4,
-    title: 'Battle for Alsace region intensifies',
-    content: 'Military forces clash in the strategic Alsace region as the conflict escalates...',
+    title: 'Beteja për rajonin e Sanxhakut intensifikohet',
+    content: 'Forcat ushtarake përplasen në rajonin strategjik të Sanxhakut ndërsa konflikti eskalon...',
     type: 'military',
     timestamp: new Date(Date.now() - 8 * 60 * 60 * 1000), // 8 hours ago
     author: 'MilitaryCorrespondent'
+  },
+  {
+    id: 5,
+    title: 'Aleanca e re ekonomike midis vendeve ballkanike',
+    content: 'Shqipëria, Kosova dhe Maqedonia e Veriut formojnë aleancë të re tregtare...',
+    type: 'politics',
+    timestamp: new Date(Date.now() - 10 * 60 * 60 * 1000), // 10 hours ago
+    author: 'EconomicAnalyst'
+  },
+  {
+    id: 6,
+    title: 'Turqia hap rrugë të re tregtare përmes Ballkanit',
+    content: 'Projekti i ri infrastrukturor lidh Stambullin me vendet ballkanike...',
+    type: 'politics',
+    timestamp: new Date(Date.now() - 12 * 60 * 60 * 1000), // 12 hours ago
+    author: 'TradeCorrespondent'
+  },
+  {
+    id: 7,
+    title: 'Beteja për kontrollin e Detit Adriatik',
+    content: 'Italia dhe Kroacia përplasen për kontrollin e rrugëve detare...',
+    type: 'military',
+    timestamp: new Date(Date.now() - 14 * 60 * 60 * 1000), // 14 hours ago
+    author: 'NavalReporter'
+  },
+  {
+    id: 8,
+    title: 'Greqia forcon pozitat në Egje',
+    content: 'Forcat greke pozicionohen strategjikisht në ishujt e Egjeit...',
+    type: 'military',
+    timestamp: new Date(Date.now() - 16 * 60 * 60 * 1000), // 16 hours ago
+    author: 'MilitaryAnalyst'
   }
 ];
 
