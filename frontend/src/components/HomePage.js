@@ -16,12 +16,25 @@ const HomePage = ({ onLogin, onRegister }) => {
   const [isRegistering, setIsRegistering] = useState(false);
 
   const topCountries = [
-    { name: 'Germany', players: 4521, flag: '🇩🇪', code: 'DE' },
-    { name: 'France', players: 3842, flag: '🇫🇷', code: 'FR' },
-    { name: 'United Kingdom', players: 3651, flag: '🇬🇧', code: 'GB' },
-    { name: 'Italy', players: 3204, flag: '🇮🇹', code: 'IT' },
-    { name: 'Spain', players: 2987, flag: '🇪🇸', code: 'ES' },
-    { name: 'Poland', players: 2743, flag: '🇵🇱', code: 'PL' }
+    { name: 'Gjermania', players: 6543, flag: '🇩🇪', code: 'DE' },
+    { name: 'Franca', players: 5987, flag: '🇫🇷', code: 'FR' },
+    { name: 'Anglia', players: 5678, flag: '🇬🇧', code: 'GB' },
+    { name: 'Italia', players: 5432, flag: '🇮🇹', code: 'IT' },
+    { name: 'Spanja', players: 4876, flag: '🇪🇸', code: 'ES' },
+    { name: 'Turqia', players: 5432, flag: '🇹🇷', code: 'TR' },
+    { name: 'Polonia', players: 4321, flag: '🇵🇱', code: 'PL' },
+    { name: 'Ukraina', players: 4987, flag: '🇺🇦', code: 'UA' },
+    { name: 'Rumania', players: 3456, flag: '🇷🇴', code: 'RO' },
+    { name: 'Greqia', players: 3245, flag: '🇬🇷', code: 'GR' },
+    { name: 'Serbia', players: 2987, flag: '🇷🇸', code: 'RS' },
+    { name: 'Bulgaria', players: 2876, flag: '🇧🇬', code: 'BG' },
+    { name: 'Kroacia', players: 2543, flag: '🇭🇷', code: 'HR' },
+    { name: 'Hungaria', players: 2987, flag: '🇭🇺', code: 'HU' },
+    { name: 'Shqipëria', players: 2156, flag: '🇦🇱', code: 'AL' },
+    { name: 'Bosnja dhe Hercegovina', players: 2134, flag: '🇧🇦', code: 'BA' },
+    { name: 'Kosova', players: 1842, flag: '🇽🇰', code: 'XK' },
+    { name: 'Sllovenia', players: 1876, flag: '🇸🇮', code: 'SI' },
+    { name: 'Maqedonia e Veriut', players: 1654, flag: '🇲🇰', code: 'MK' }
   ];
 
   const features = [
